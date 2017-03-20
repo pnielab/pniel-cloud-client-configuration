@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MessageRestController {
 
 
-    @Value("${clientMessage:Hello default}")
+    @Value("${clientMessage}")
     private String clientMessage;
 
     @RequestMapping("/client/message")
