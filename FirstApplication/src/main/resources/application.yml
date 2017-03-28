@@ -1,11 +1,23 @@
-server:
-  port: 8082
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: ${hostName}
+    statusPageUrlPath: ${server.servlet-path}/info
+    healthCheckUrlPath: ${server.servlet-path}/health
+    preferIpAddress: true
+    metadataMap:
+      instanceId: ${spring.application.name}:${server.port}
 
-#spring:
-#  rabbitmq:
-#  host: localhost
-#  port: 15672
-#  username: guest
-#  password: guest
-#  dynamic: true
-#spring.rabbitmq.virtual-host=cep-host
+---
+spring:
+  profiles: standalone
+hostName: localhost
+
+---
+spring:
+  profiles: production
+hostName: localhost

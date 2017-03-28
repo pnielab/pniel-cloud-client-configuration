@@ -1,1 +1,9 @@
-.idea/
+FirstApplication/.idea/
+FirstApplication/target/
+FirstApplication/FirstApplication.iml
+SecondApp/.idea/
+SecondApp/target/
+SecondApp/SecondApp.iml
+
+
+

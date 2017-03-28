@@ -1,5 +1,0 @@
-server\service\MessageServiceImpl.class
-server\service\MessageService.class
-server\Boot.class
-server\controllers\UnRefreshableMessageController.class
-server\controllers\RefreshableMessageController.class

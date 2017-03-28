@@ -1,0 +1,9 @@
+ribbon-for-firstApplication:
+  ribbon:
+    # Eureka vipAddress of the target service
+    DeploymentContextBasedVipAddresses: firstApplication
+    #listOfServers: localhost:${SERVER.PORT}
+    NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList
+
+    # Interval to refresh the server list from the source (ms)
+    ServerListRefreshInterval: 30000

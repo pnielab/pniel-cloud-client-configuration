@@ -18,7 +18,7 @@ public class RefreshableMessageController {
     @Autowired
     private MessageService service;
 
-    @RequestMapping("/refreshableMessageController/client/message")
+    @RequestMapping("/firstApplication/message")
     String getMessage() {
         return service.getMessage();
     }
